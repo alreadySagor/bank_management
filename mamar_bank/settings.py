@@ -32,7 +32,7 @@ SECRET_KEY = env("SECRET_KEY")
 # SECRET_KEY = 'django-insecure-e95^oc-td-=18@$8!7qzxxy*9p0wz(a+kapv$6h@cl92yxi5+y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["local-bank.onrender.com", "127.0.0.1", "localhost"]
@@ -162,3 +162,8 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = env("EMAIL")
 EMAIL_HOST_PASSWORD = env("EMAIL_PASSWORD")
+
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://local-bank.onrender.com",
+]
