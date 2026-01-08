@@ -2,6 +2,7 @@ asgiref
 certifi
 crispy-bootstrap5
 distlib
+dj-database-url
 Django
 django-crispy-forms
 django-environ
@@ -14,6 +15,7 @@ pillow
 pipenv
 platformdirs
 psycopg2
+psycopg2-binary
 PyAutoGUI
 PyGetWindow
 PyMsgBox
