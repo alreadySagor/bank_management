@@ -37,7 +37,7 @@ DEBUG = False
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ["*"]
 
-
+CSRF_TRUSTED_ORIGINS = ['https://local-bank.onrender.com', 'https://*.127.0.0.1']
 
 # Application definition
 
@@ -162,8 +162,3 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = env("EMAIL")
 EMAIL_HOST_PASSWORD = env("EMAIL_PASSWORD")
-
-
-CSRF_TRUSTED_ORIGINS = [
-    "https://local-bank.onrender.com",
-]
